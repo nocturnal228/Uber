@@ -32,7 +32,7 @@ nav {
   font-size: 15px;
   line-height: 15px;
   text-decoration: none;
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 .subheader {
   width: 100%;
@@ -61,7 +61,7 @@ nav {
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 .subheader .subheader_phonenumber {
   text-decoration: none;
@@ -76,7 +76,7 @@ nav {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
   width: 172px;
   height: 46px;
@@ -127,7 +127,7 @@ nav {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
   width: 259px;
   height: 63px;
@@ -155,7 +155,7 @@ nav {
     font-weight: 400;
     font-size: 11px;
     background: #000000;
-    color: #FFFFFF; }
+    color: #ffffff; }
   .benefit .benefit_header {
     margin-top: 37px;
     text-transform: uppercase;
@@ -245,7 +245,7 @@ nav {
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
-    color: #FFFFFF; }
+    color: #ffffff; }
   .mobile_app_block_plus {
     margin: 0 auto;
     display: flex;
@@ -257,12 +257,32 @@ nav {
     transform: translateX(-50%);
     width: 29px;
     height: 29px;
-    background: #000000;
+    background-color: #000000;
     border-radius: 100%;
     padding: 6px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.3s all; }
     .mobile_app_block_plus img {
       width: 100%; }
+    .mobile_app_block_plus:before {
+      content: "";
+      width: 14px;
+      height: 2px;
+      background-color: #1EACC7;
+      transition: 0.3s all; }
+    .mobile_app_block_plus:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 14px;
+      width: 2px;
+      background-color: #1EACC7;
+      transition: 0.3s all; }
+    .mobile_app_block_plus:hover {
+      background-color: gray; }
+    .mobile_app_block_plus:hover:before, .mobile_app_block_plus:hover:after {
+      background-color: #ffffff; }
   .mobile_app_block_1 {
     padding-top: 82.5px;
     margin-top: 30px;
@@ -305,7 +325,7 @@ nav {
     align-items: center;
     width: 115px;
     height: 27px;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .choose_header {
     margin-top: 26px;
     text-transform: uppercase;
@@ -314,7 +334,7 @@ nav {
     font-weight: 700;
     font-size: 38px;
     line-height: 48px;
-    color: #FFFFFF; }
+    color: #ffffff; }
   .choose_subheader {
     margin-top: 1px;
     text-align: center;
@@ -322,7 +342,7 @@ nav {
     font-weight: 400;
     font-size: 17px;
     line-height: 21px;
-    color: #FFFFFF; }
+    color: #ffffff; }
   .choose_descr {
     text-align: center;
     font-style: normal;
@@ -351,7 +371,6 @@ nav {
     top: 226px; }
 
 .terms {
-  min-height: 764px;
   padding: 66px 0 87px 0; }
   .terms_box {
     display: flex;
@@ -361,7 +380,7 @@ nav {
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 115px;
     height: 27px;
     background: #000000;
@@ -374,5 +393,54 @@ nav {
     font-size: 38px;
     line-height: 48px;
     text-align: center; }
+  .terms_list {
+    margin-top: 22px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    color: #222222;
+    list-style-type: none;
+    padding-inline-start: 52px; }
+    .terms_list li {
+      position: relative;
+      margin-bottom: 10px; }
+      .terms_list li:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -32px;
+        top: 2px;
+        width: 21px;
+        height: 20px;
+        background: url("../icons/check/blue.svg") center center/cover no-repeat; }
+  .terms_descr {
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    color: #1CA8C3; }
+  .terms_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px; }
+    .terms_title_1 {
+      margin-top: 33px;
+      color: #1CA8C3; }
+    .terms_title_2 {
+      margin-top: 37px;
+      color: #1CA8C3; }
+    .terms_title_3 {
+      margin-top: 61px;
+      color: #FF5656; }
+    .terms_title_4 {
+      color: #FF5656;
+      margin-top: 61px; }
+
+.terms_red li:before {
+  content: "";
+  background: url("../icons/check/red.svg") center center/cover no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
