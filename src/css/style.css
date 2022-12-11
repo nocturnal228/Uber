@@ -6,7 +6,11 @@ header {
   position: relative; }
 
 nav {
+  max-width: 1903px;
+  position: fixed;
   height: 53px;
+  width: 100vw;
+  z-index: 2;
   background-color: #212121; }
 
 .container {
@@ -35,6 +39,7 @@ nav {
   color: #ffffff; }
 
 .subheader {
+  top: 53px;
   width: 100%;
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
@@ -311,6 +316,7 @@ nav {
 .choose {
   min-height: 898px; }
   .choose_wrapper {
+    width: 100%;
     position: absolute;
     z-index: -1; }
   .choose_box {
@@ -353,12 +359,11 @@ nav {
   .choose_block_1 {
     padding-top: 49px;
     background: #070716;
-    height: 502px;
-    width: 100vw; }
+    height: 502px; }
   .choose_block_2 {
     padding-top: 210.5px;
     height: 397px;
-    width: 100vw;
+    width: 100%;
     background: url("../img/background/mobile_bg.png"); }
 
 .container_choose {
@@ -505,6 +510,7 @@ nav {
   position: relative;
   padding-top: 12px; }
   .links .container_footer {
+    max-width: 1903px;
     padding: 12px auto 10.5px auto;
     width: 100vw;
     min-height: 133.5px; }
@@ -595,5 +601,11 @@ nav {
     font-weight: 400;
     font-size: 11px;
     color: #1FBAD6; }
+  .links .row {
+    margin-right: 0; }
+
+.menu_text {
+  font-size: 12px;
+  line-height: 0px; }
 
 /*# sourceMappingURL=style.css.map */
